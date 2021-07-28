@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/people_picture"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:src="@drawable/vector__1_"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/people_picture"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/people_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat"
+                android:text="samuel ochuba"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.083"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="22dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/cake1"
+                app:layout_constraintStart_toStartOf="@+id/people_name"
+                app:layout_constraintTop_toBottomOf="@+id/people_name" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="23dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/ic_outline_date_range_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="20.10.2021"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/date_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="30 days left"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/imageView9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector__11_"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/background_flower"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.938"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/scroll_bar"
+                android:layout_width="3dp"
+                android:layout_height="75dp"
+                android:background="@color/purple_500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.954"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/constraintLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/people_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:text="its  victors birthday"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.477"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView9"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:src="@drawable/ic_outline_cake_24"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/people_picture"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/people_name" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            android:text="20.10.2020"-->
+<!--            android:textSize="10dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/imageView9"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView9"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageView9"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView10"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:src="@drawable/ic_outline_date_range_24"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/people_picture"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView9" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            android:text="30 Days left"-->
+<!--            android:textSize="10dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/imageView10"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView10"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageView10"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+

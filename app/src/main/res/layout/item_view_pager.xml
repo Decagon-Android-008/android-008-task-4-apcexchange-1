@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="15dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_pics8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </ImageView>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/black"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/pen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/white_circle_call"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/white_circle_mail"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/white_circle_share"
+            app:layout_constraintHorizontal_bias="0.579"
+            app:layout_constraintStart_toEndOf="@+id/white_circle_call" />
+
+        <View
+            android:id="@+id/white_circle_share"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_baseline_call_24"
+            app:layout_constraintBottom_toBottomOf="@+id/white_circle_call"
+            app:layout_constraintEnd_toEndOf="@+id/white_circle_call"
+            app:layout_constraintStart_toStartOf="@+id/white_circle_call"
+            app:layout_constraintTop_toTopOf="@+id/white_circle_call" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="27dp"
+            android:src="@drawable/ic_baseline_mail_24"
+            app:layout_constraintBottom_toBottomOf="@+id/white_circle_mail"
+            app:layout_constraintEnd_toEndOf="@+id/white_circle_mail"
+            app:layout_constraintStart_toStartOf="@+id/white_circle_mail"
+            app:layout_constraintTop_toTopOf="@+id/white_circle_mail" />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="27dp"
+            android:src="@drawable/ic_baseline_share_24"
+            app:layout_constraintBottom_toBottomOf="@+id/white_circle_share"
+            app:layout_constraintEnd_toEndOf="@+id/white_circle_share"
+            app:layout_constraintStart_toStartOf="@+id/white_circle_share"
+            app:layout_constraintTop_toTopOf="@+id/white_circle_share" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/style_script_regular"
+            android:text="yaah!"
+            android:textColor="#ffff"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.515" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/group"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="Its Victors birthday."
+            android:textColor="#fff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.655" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

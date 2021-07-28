@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/house_icon"
+        android:enabled="true"
+        />
+
+    <item android:id="@+id/people"
+        android:icon="@drawable/person_icon"
+        android:title="@string/people"
+        android:enabled="true"/>
+
+    <item android:id="@+id/gift"
+        android:icon="@drawable/gift_icon"
+        android:title="@string/gifts"
+        android:enabled="true"/>
+</menu>
